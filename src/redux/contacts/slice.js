@@ -6,6 +6,7 @@ import {
   editContact,
   fetchContacts,
 } from './operations.js';
+import { logout } from '../auth/operations.js';
 
 const handlePending = state => {
   state.loading = true;
@@ -27,6 +28,10 @@ const contactsSlice = createSlice({
   },
   extraReducers: builder => {
     builder
+      .addCase(logout.fulfilled, state => {
+        state.contacts.items = [];
+      })
+
       .addCase(fetchContacts.pending, handlePending)
       .addCase(fetchContacts.fulfilled, (state, action) => {
         state.loading = false;

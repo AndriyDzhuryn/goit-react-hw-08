@@ -18,13 +18,6 @@ export const register = createAsyncThunk(
   async (formData, thunkAPI) => {
     try {
       const { data } = await authInstance.post('/users/signup', formData);
-      /*
-      {user: {…}, token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N…0OTh9._UwlJpkzE0960OH1bndazZYg1Tdv2cYX-TepY_NPL8I'}
-          token: 
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzJlMTVkYWM0OTVlZDZlMjVmMzhlZjciLCJpYXQiOjE3MzEwNzM0OTh9._UwlJpkzE0960OH1bndazZYg1Tdv2cYX-TepY_NPL8I"
-          user: {name: 'sada', email: 'sada1@ux.ua'}
-       */
-
       setToken(data.token);
       return data;
     } catch (error) {
@@ -38,12 +31,6 @@ export const login = createAsyncThunk(
   async (formData, thunkAPI) => {
     try {
       const { data } = await authInstance.post('/users/login', formData);
-      /*
-      {user: {…}, token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N…2MDB9.8XAlg0LBKzo03TP-ZDstvKLQdemXz9Si3-83PTqmQAE'}
-        token: 
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzJlMTVkYWM0OTVlZDZlMjVmMzhlZjciLCJpYXQiOjE3MzEwNzM2MDB9.8XAlg0LBKzo03TP-ZDstvKLQdemXz9Si3-83PTqmQAE"
-        user: {name: 'sada', email: 'sada1@ux.ua'}
-       */
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
