@@ -1,0 +1,67 @@
+.formAddContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.inputDataContacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.inputDataContacts:hover {
+  color: #646cff;
+}
+
+.inputNameContacts {
+  width: 300px;
+  height: 20px;
+  padding: 2px 5px;
+}
+
+.inputNameContacts:focus,
+.inputNameContacts:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
+
+.inputNumberContacts {
+  width: 300px;
+  height: 20px;
+  padding: 2px 5px;
+}
+
+.inputNumberContacts:focus,
+.inputNumberContacts:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
+
+.btnAddContact {
+  color: #ffffff;
+  margin-top: 20px;
+  background-color: #646cff;
+  border: none;
+  height: 30px;
+  padding: 0 10px 2px;
+  font-size: 18px;
+}
+
+.btnAddContact:focus,
+.btnAddContact:focus-visible {
+  outline: 4px auto #000dff;
+}

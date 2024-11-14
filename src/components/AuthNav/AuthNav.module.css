@@ -1,0 +1,22 @@
+.authNavWrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.link {
+  font-size: 30px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.link:focus,
+.link:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.active {
+  color: red;
+}

@@ -1,0 +1,57 @@
+.formAddContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputDataContacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.inputDataContacts:hover {
+  color: #646cff;
+}
+
+.inputEmailContacts {
+  width: 300px;
+  height: 20px;
+  padding: 2px 5px;
+}
+
+.inputEmailContacts:focus,
+.inputEmailContacts:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.inputPasswordContacts {
+  width: 300px;
+  height: 20px;
+  padding: 2px 5px;
+}
+
+.inputPasswordContacts:focus,
+.inputPasswordContacts:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
+
+.btnSignIn {
+  color: #ffffff;
+  margin-top: 20px;
+  background-color: #646cff;
+}
+
+.btnSignIn:focus,
+.btnSignIn:focus-visible {
+  outline: 4px auto #000dff;
+}

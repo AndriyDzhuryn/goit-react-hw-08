@@ -1,0 +1,37 @@
+.btnWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnDelete {
+  font-size: 18px;
+  height: 30px;
+  background-color: #646cff;
+  color: #ffffff;
+  padding: 0 10px 2px;
+}
+
+.btnDelete:hover {
+  outline: 4px auto #000dff;
+}
+
+.btnDelete:focus,
+.btnDelete:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.btnCancel {
+  font-size: 18px;
+  height: 30px;
+  background-color: #646cff;
+  padding: 0 10px 2px;
+}
+
+.btnCancel:hover {
+  outline: 4px auto #000dff;
+}
+
+.btnCancel:focus,
+.btnCancel:focus-visible {
+  outline: 4px auto #000dff;
+}

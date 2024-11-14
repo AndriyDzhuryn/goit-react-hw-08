@@ -1,0 +1,64 @@
+.contactBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dataContact {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.nameContact {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.numberContact {
+  font-size: 20px;
+  margin: 0;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnEditContact {
+  font-size: 18px;
+  height: 30px;
+  background-color: #646cff;
+  color: #ffffff;
+  padding: 0 10px 2px;
+}
+
+.btnEditContact:hover {
+  outline: 4px auto #000dff;
+}
+
+.btnEditContact:focus,
+.btnEditContact:focus-visible {
+  outline: 4px auto #000dff;
+}
+
+.btnDeleteContact {
+  font-size: 18px;
+  height: 30px;
+  background-color: #646cff;
+  padding: 0 10px 2px;
+}
+
+.btnDeleteContact:hover {
+  outline: 4px auto #000dff;
+}
+
+.btnDeleteContact:focus,
+.btnDeleteContact:focus-visible {
+  outline: 4px auto #000dff;
+}
