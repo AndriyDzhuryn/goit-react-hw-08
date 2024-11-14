@@ -6,12 +6,12 @@ import ContactForm from '../../components/ContactForm/ContactForm.jsx';
 import ContactList from '../../components/ContactList/ContactList.jsx';
 import SearchBox from '../../components/SearchBox/SearchBox.jsx';
 import EditContactModal from '../../components/EditContactModal/EditContactModal.jsx';
+import DeleteContactModal from '../../components/DeleteContactModal/DeleteContactModal.jsx';
 
 import { selectError, selectLoading } from '../../redux/auth/selectors.js';
 import { fetchContacts } from '../../redux/contacts/operations.js';
 
 import css from '../ContactsPage/ContactsPage.module.css';
-import DeleteContactModal from '../../components/DeleteContactModal/DeleteContactModal.jsx';
 
 const ContactsPage = () => {
   const dispatch = useDispatch();
