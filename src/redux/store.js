@@ -15,12 +15,6 @@ import { contactsReducer } from './contacts/slice.js';
 import { filterReducer } from './filters/slice.js';
 import { authReducers } from './auth/slice.js';
 
-const contactsConfig = {
-  key: 'contacts',
-  storage: storage,
-  whitelist: ['contacts'],
-};
-
 const authConfig = {
   key: 'auth',
   storage: storage,
@@ -30,7 +24,7 @@ const authConfig = {
 export const store = configureStore({
   reducer: {
     auth: persistReducer(authConfig, authReducers),
-    contacts: persistReducer(contactsConfig, contactsReducer),
+    contacts: contactsReducer,
     filters: filterReducer,
   },
   middleware: getDefaultMiddleware =>
